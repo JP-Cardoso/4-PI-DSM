@@ -11,6 +11,8 @@ Participantes:
 
 ## Stacks utilizadas
 
+**Mobile:** React-Native
+
 **Front-end:** Angular, Angular Material, Charts.js
 
 **Back-end:** Node, Hapi
