@@ -8,3 +8,9 @@ Participantes:
     gitHub: https://github.com/JP-Cardoso
 - Marcelo Luís Siqueira Reis:
     github: https://github.com/marcelo-ls-reis
+
+## Stack utilizada
+
+**Front-end:** Angular, Angular Material, Charts.js
+
+**Back-end:** Node, Hapi
