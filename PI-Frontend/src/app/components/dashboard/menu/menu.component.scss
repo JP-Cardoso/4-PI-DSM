@@ -1,0 +1,39 @@
+nav {
+  background-color: #14522B;
+  height: 51px;
+
+  .float-left {
+    float: left;
+  }
+
+  .display-flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 375px) {
+    ul {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    ul {
+      flex-direction: row;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+  a {
+    color: #f1af09;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  a:hover {
+    color: #F5F5DC;
+    cursor: pointer;
+  }
+}

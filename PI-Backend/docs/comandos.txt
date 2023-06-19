@@ -1,0 +1,19 @@
+# Comandos do projeto:
+
+Npm start: Ele inicia o projeto;
+
+Como eu estou usando sequelize-cli, eu automatizei alguns comando para criação do banco, quanto das tabelas.
+
+Os comandos:
+
+- npm run create:
+    - Ele é responsável por criar o banco de acordo com a configuração que esta no arquivo database.js da pasta config. Caminho /src/config/database. Vale ressaltar que estou usando .env para guardar informações sensíveis.
+- npm run drop:
+    - Ele deleta todo banco.
+
+Como já criei as migrations das tabelas só será necessário utilizar os comando abaixo para criar as tabelas do banco
+
+- npm run migrate:
+    - Esse comando roda todas as migrations existentes e as novas que forem criadas. Depois executar esse comando as tabelas serão geradas.
+- npm run migrate:undo
+    - Ele é inverso do comando acima. Ele desfaz todas as migrações que foram executadas.
