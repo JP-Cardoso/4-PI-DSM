@@ -9,7 +9,7 @@ Participantes:
 - Marcelo Luís Siqueira Reis:
     github: https://github.com/marcelo-ls-reis
 
-## Stack utilizada
+## Stacks utilizadas
 
 **Front-end:** Angular, Angular Material, Charts.js
 
