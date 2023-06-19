@@ -1,12 +1,9 @@
-import { LoginUser } from './../../interfaces/loginUser';
 import { takeUntil, Subject } from 'rxjs';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
-import { ApiService } from 'src/app/services/api.service';
 import { LocalstorageService } from 'src/app/services/localstorage.service';
 import { UtilsService } from 'src/app/services/utils.service';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login.service';
 
 @Component({
@@ -22,8 +19,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   backgroud:string = '../../../assets/imagem-1250.jpg';
   constructor(
     private fb: FormBuilder,
-    private dialog: MatDialog,
-    private apiService: ApiService,
     private localStorageService: LocalstorageService,
     private utilService: UtilsService,
     private router: Router,
@@ -44,18 +39,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       password: [null, [Validators.required]],
     })
   }
-
-  openDialogRegister() {
-    // this.dialog.open(ContinuationRegisterComponent, {
-    //   width: '600px',
-    //   autoFocus: false,
-    //   maxHeight: '90vh',
-    //   data: {
-    //     data: this.createDataDialog()
-    //   }
-    // })
-  }
-
   login() {
     if(this.isValidForm()) {
       const user = this.createPayload();

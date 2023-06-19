@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
 import { LocalstorageService } from 'src/app/services/localstorage.service';
 
 @Component({
@@ -8,7 +7,7 @@ import { LocalstorageService } from 'src/app/services/localstorage.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  constructor(private apiService: ApiService, private localStorageService: LocalstorageService) {}
+  constructor( private localStorageService: LocalstorageService) {}
 
   ngOnInit() {
     this.getUser();
